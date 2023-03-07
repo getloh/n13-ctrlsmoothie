@@ -19,6 +19,7 @@ module.exports = {
                 ctrl6: 'var(--ctrl6)',
                 ctrl7: 'var(--ctrl7)',
                 ctrl8: 'var(--ctrl8)',
+                ctrl9: 'var(--ctrl9)'
             },
             height: {
                 '128': '32rem',
