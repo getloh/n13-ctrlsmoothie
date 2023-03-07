@@ -1,90 +1,64 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import HomeScroller from './components/HomeScroller'
+import IngredientTile from './components/IngredientTile'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Home()
+{
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+    <main className="bg-ctrl1">
+      <div>
+        <HomeScroller />
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section className="p-10 flex w-full bg-ctrl2 h-128 justify-center items-center">
+          <div>
+            <div className="w-1/3 border-2">IMAGE PLACEHOLDER</div>
+          </div>
+          <div className="w-1/3">
+            <p>Stacked with protein, good fats and complex carbohydrates, this shake is the perfect healthy breakfast alternative to keep you full up till Lunchtime. <br></br><br></br></p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
+            <p>It contains maca and cacao to help rid your body of pesky free radicals. To top it off, beetroot is packed with calcium, vitamin C, potassium and folic acid - a great way to kick-start the morning.</p>          </div>
+        </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <section className="w-full flex flex-wrap">
+          <IngredientTile
+            bgColor="bg-ctrl3"
+            text="Stamina"
+            subtext="In a beet"
+          />
+          <IngredientTile
+            bgColor="bg-ctrl4"
+            text="Manage weight"
+            subtext="with almond milk"
+          />
+          <IngredientTile
+            bgColor="bg-ctrl5"
+            text="Antioxident"
+            subtext="Boost with cacao"
+          />
+          <IngredientTile
+            bgColor="bg-ctrl6"
+            text="Metabolise"
+            subtext="with vanilla pods"
+          />
+          <IngredientTile
+            bgColor="bg-ctrl7"
+            text="Boost energy"
+            subtext="with maca"
+          />
+          <IngredientTile
+            bgColor="bg-ctrl8"
+            text="Alkalise"
+            subtext="with sea salt"
+          />
+
+        </section>
+
       </div>
     </main>
   )
