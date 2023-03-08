@@ -13,19 +13,19 @@ export default function Navbar()
             </div>
 
             <div className="flex space-x-10 h-12 justify-center items-center">
-                <button className="">
+                <button className="hover:scale-125 transition-transform">
                     Products
                 </button>
-                <button className="">
+                <button className="hover:scale-125 transition-transform">
                     <p>Juice clinic</p>
                 </button>
-                <button className="h-12 flex pt-1">
+                <button className="h-12 flex pt-1 hover:scale-125 transition-transform">
                     <LogoSvg size={40}/> <p className="text-3xl">CPJ</p>
                 </button>
-                <button className="">
+                <button className="hover:scale-125 transition-transform">
                     About CPJ
                 </button>
-                <button className="">
+                <button className="hover:scale-125 transition-transform">
                     Gallery
                 </button>
             </div>

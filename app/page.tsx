@@ -16,7 +16,7 @@ export default function Home()
       <div>
         <HomeScroller />
 
-        {/* <section className="py-10 px-2 xl:px-40 flex w-full bg-ctrl2 h-128 justify-center items-center relative">
+        <section className="py-10 px-2 xl:px-40 flex w-full bg-ctrl2 h-128 justify-center items-center relative">
         <Button 
           text="Order now"
           class="px-2"
@@ -151,7 +151,7 @@ export default function Home()
           text="Order now"
           style={{}}/>
 
-        </section> */}
+        </section>
       </div>
     </main>
   )
