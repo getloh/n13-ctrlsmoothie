@@ -29,7 +29,7 @@ export default function IngredientTile(props: IngredientTileProps)
                 alt="beet"
                 fill
                 style={{ padding: "3rem" }}
-                className="hover:scale-105"
+                className="hover:scale-105 transition-transform"
             >
             </Image>
             <div className="absolute top-1/2 -translate-y-1/2 text-white pointer-events-none">
