@@ -28,15 +28,14 @@ export default function IngredientTile(props: IngredientTileProps)
                 src="/beet.png"
                 alt="beet"
                 fill
-                style={{ padding: "3rem" }}
-                className="hover:scale-105 transition-transform"
+                className="p-4 hover:scale-105 transition-transform"
             >
             </Image>
             <div className="absolute top-1/2 -translate-y-1/2 text-white pointer-events-none">
-                <h5 className="text-3xl font-bold">{props.text}</h5>
-                <p className="text-xl font-bold text-center">{props.subtext}</p>
+                <h5 className="text-xl sm:text-3xl font-bold text-center">{props.text}</h5>
+                <p className="sm:text-xl font-bold text-center">{props.subtext}</p>
             </div>
-            <div className="absolute bottom-5">
+            <div className="absolute bottom-1 sm:bottom-5 scale-50 sm:scale-100">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="48" viewBox="0 96 960 960" width="48"><path d="M433 873V623H183v-94h250V279h94v250h250v94H527v250h-94Z" /></svg>            </div>
         </div>
     )

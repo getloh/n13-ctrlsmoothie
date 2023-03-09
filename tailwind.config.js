@@ -1,4 +1,7 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
     content: [
         "./app/**/*.{js,ts,jsx,tsx}",
@@ -10,7 +13,7 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors:{
+            colors: {
                 ctrl1: 'var(--ctrl1)',
                 ctrl2: 'var(--ctrl2)',
                 ctrl3: 'var(--ctrl3)',
@@ -23,7 +26,10 @@ module.exports = {
             },
             height: {
                 '128': '32rem',
-            }
+            },
+            fontSize: {
+            "10xl":'var(--10xl)'
+            },
         },
     },
     plugins: [],

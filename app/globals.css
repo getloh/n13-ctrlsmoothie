@@ -23,6 +23,8 @@
   --ctrl8: #F1D5CA;
   --ctrl9: #382E2C;
 
+  --10xl: 12rem;
+
   --primary-glow: conic-gradient(from 180deg at 50% 50%,
       #16abff33 0deg,
       #0885ff33 55deg,
@@ -134,3 +136,6 @@ a {
   /* background: #eee; */
 }
 
+.text-10xl{
+  font-size: 12rem;
+}

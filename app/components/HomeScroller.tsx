@@ -104,9 +104,9 @@ export default function HomeScroller()
             // Juice tab
             return (
                 <div className="text-center">
-                    <p className="text-3xl">{juiceArray[vState1].name}</p>
-                    <p className="text-xl">{juiceArray[vState1].text}</p>
-                    <p className="text-xl font-bold">{juiceArray[vState1].subtext}</p>
+                    <p className="text-xl sm:text-3xl">{juiceArray[vState1].name}</p>
+                    <p className="text-sm sm:text-xl">{juiceArray[vState1].text}</p>
+                    <p className="text-xs sm:text-xl font-bold ">{juiceArray[vState1].subtext}</p>
 
                 </div>
             )
@@ -116,16 +116,16 @@ export default function HomeScroller()
             // Juice tab
             return (
                 <div className="text-center">
-                    <p className="text-3xl">{shotArray[vState2].name}</p>
-                    <p className="text-xl">{shotArray[vState2].text}</p>
-                    <p className="text-xl font-bold">{shotArray[vState2].subtext}</p>
+                    <p className="text-2xl sm:text-3xl">{shotArray[vState2].name}</p>
+                    <p className="text-sm sm:text-xl">{shotArray[vState2].text}</p>
+                    <p className="text-xs sm:text-xl font-bold text-xs">{shotArray[vState2].subtext}</p>
                 </div>
             )
         }
     }
 
     return (
-        <div className="h-80 lg:h-128 relative flex justify-center pb-16">
+        <div className="h-80 sm:h-128 relative flex justify-center pb-16">
             <Swiper
                 direction={"vertical"}
                 className="mySwiper"
@@ -148,12 +148,14 @@ export default function HomeScroller()
                         {
                             return (
                                 <SwiperSlide>
-                                    <div className="p-40">
+                                    <div 
+                                    // className="sm:p-16 md:p-24 lg:p-40"
+                                    >
 
                                         <Image
                                             src={"/" + juice.img}
-                                            width={400}
-                                            height={400}
+                                            width={300}
+                                            height={300}
                                             alt={juice.name}
                                         />
 
@@ -178,8 +180,9 @@ export default function HomeScroller()
                         {
                             return (
                                 <SwiperSlide>
-                                    <div className="p-48">
-
+                                    <div 
+                                    // className="p-8 sm:p-16 md:p-24 lg:p-40 xl:p-48"
+                                    >
                                         <Image
                                             src={"/" + juice.img}
                                             width={400}
@@ -222,24 +225,21 @@ export default function HomeScroller()
 
                     </Swiper>
                 </SwiperSlide>
-                <SwiperSlide>                            
+                <SwiperSlide>
                     <p className="text-gray-400 font-bold font-2xl">
-                    More things here
-                </p></SwiperSlide>
+                        More things here
+                    </p></SwiperSlide>
             </Swiper>
 
-            <div className="absolute bottom-16 z-10">
+            {/**LOWER TEXT AREA CONTAINER */}
+            <div className="absolute bottom-8 sm:bottom-16 z-10 pointer-events-none">
                 {!inTransition && renderText()}
             </div>
-            <div className="absolute top-1/2 -translate-y-2/3 z-0">
-                <p className="font-bold" style={{ fontSize: "12rem", fontFamily: "sans-serif" }}>CTRL</p>
-            </div>
 
-            {/* <button 
-                onClick={()=> {swiper.slideTo(1)}}
-            >
-                TEST
-                </button> */}
+            {/**BACKGROUND CTRL LOGO */}
+            <div className="absolute top-1/2 -translate-y-2/3 z-0">
+                <p className="font-bold text-ctrl9 text-9xl lg:text-10xl" style={{ fontFamily: "sans-serif" }}>CTRL</p>
+            </div>
 
             <div className="absolute left-0 top-1/2 -translate-y-2/3 z-20 flex flex-col ">
                 <HomeScrollerButton
