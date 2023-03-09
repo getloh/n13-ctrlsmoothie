@@ -84,74 +84,74 @@ export default function Home()
                             <h5 className="text-lg">Ctrl - The Energy Shake</h5>
                         </div>
                         <div>
-                            <table class="">
+                            <table className="">
                                 <thead>
                                     <tr className="border-b-2 border-ctrl6 h-10">
-                                        <th class="w-30 text-left">Ctrl</th>
-                                        <th class="w-20 text-right">100ml</th>
-                                        <th class="w-20 text-right">330ml</th>
+                                        <th className="w-30 text-left">Ctrl</th>
+                                        <th className="w-20 text-right">100ml</th>
+                                        <th className="w-20 text-right">330ml</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="">Energy</td>
-                                        <td class="text-right">a2</td>
-                                        <td class="text-right">a3</td>
+                                        <td className="">Energy</td>
+                                        <td className="text-right">a2</td>
+                                        <td className="text-right">a3</td>
                                     </tr>
                                     <tr>
                                         <td></td>
-                                        <td class="text-right">b2</td>
-                                        <td class="text-right">b3</td>
+                                        <td className="text-right">b2</td>
+                                        <td className="text-right">b3</td>
                                     </tr>
                                     <tr>
                                         <td className="h-2"></td>
                                     </tr>
                                     <tr className="">
-                                        <td class="">Protein</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
+                                        <td className="">Protein</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
                                     </tr>
                                     <tr>
                                         <td className="h-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="">Carbohydrates</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
+                                        <td className="">Carbohydrates</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
                                     </tr>
                                     <tr>
-                                        <td class="">of which is sugars</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
-                                    </tr>
-                                    <tr>
-                                        <td className="h-2"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">Fat</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">of which is saturates</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
+                                        <td className="">of which is sugars</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
                                     </tr>
                                     <tr>
                                         <td className="h-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="">Fibre</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
+                                        <td className="">Fat</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="">of which is saturates</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
                                     </tr>
                                     <tr>
                                         <td className="h-2"></td>
                                     </tr>
                                     <tr>
-                                        <td class="">Sodium</td>
-                                        <td class="text-right">c2</td>
-                                        <td class="text-right">c3</td>
+                                        <td className="">Fibre</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
+                                    </tr>
+                                    <tr>
+                                        <td className="h-2"></td>
+                                    </tr>
+                                    <tr>
+                                        <td className="">Sodium</td>
+                                        <td className="text-right">c2</td>
+                                        <td className="text-right">c3</td>
                                     </tr>
                                 </tbody>
                             </table>

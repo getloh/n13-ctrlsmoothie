@@ -147,8 +147,10 @@ export default function HomeScroller()
                         {juiceArray.map((juice) =>
                         {
                             return (
-                                <SwiperSlide>
-                                    <div 
+                                <SwiperSlide
+                                    key={juice.name}
+                                >
+                                    <div
                                     // className="sm:p-16 md:p-24 lg:p-40"
                                     >
 
@@ -179,8 +181,10 @@ export default function HomeScroller()
                         {shotArray.map((juice) =>
                         {
                             return (
-                                <SwiperSlide>
-                                    <div 
+                                <SwiperSlide
+                                    key={juice.name}
+                                >
+                                    <div
                                     // className="p-8 sm:p-16 md:p-24 lg:p-40 xl:p-48"
                                     >
                                         <Image
